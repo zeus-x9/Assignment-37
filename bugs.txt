@@ -1,0 +1,15 @@
+html:
+no bugs
+
+css:
+line 7: missing a hyphen "-" between "background" and "color"
+line 15: position: relative is necessary to be able to move the box
+
+js:
+line 33: the id of the input is "nameInput" and not "name"
+line 40: the document doesnt have a style so we must select "body"
+line 40: missing a "." befor style
+line 40: fixed a typo in "styel" -> "style"
+line 40: changed "==" which is used for comparison to one "=" which is used to set a value
+line 42: the id is "box" and not "boxx"
+line 46: changed "==" which is used for comparison to one "=" which is used to set a value

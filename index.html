@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Buggy Example</title>
+<style>
+body {
+background-color: lightblue;
+/* backgroundcolor must contain a "-" */
+}
+
+#box {
+width: 100px;
+height: 100px;
+background: red;
+position: relative;
+/*Position must be relative to be able to move the box*/
+}
+</style>
+</head>
+<body>
+
+<h1>Bug Practice</h1>
+
+<input id="nameInput" type="text">
+<button onclick="start()">Start</button>
+
+<div id="box"></div>
+
+<script>
+counter = 0;
+
+function start() {
+let input = document.getElementById("nameInput");
+//the id is nameInput
+console.log(input.value);
+
+interval = setInterval(function () {
+counter++;
+
+document.body.style.backgroundColor = "yellow";
+//missing a "." and typo in style + body and one "=" is used to set a value
+let box = document.getElementById("box");
+//id is box
+box.style.left = counter + "px";
+
+counter = 10;
+//"==" is for comparison so "=" must be used to set the value
+})};
+</script>
+
+</body>
+</html>
